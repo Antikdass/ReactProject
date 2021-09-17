@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Poppins';
+    src: local('Poppins'), url("../assets/fonts/Poppins-Medium.ttf") format('ttf') ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+*{
+    font-family: Poppins;
+}
+
+.img{
+    box-shadow: 1px 1px 20px 2px #dbdbdb;
+    border-radius: 10%;
+    padding: 50px 20px 50px 20px;
+}
+.title{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.text{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.forma{
+    display: flex;
+
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+.e-mail{
+    height: 32px;
+    width: 88%;
+    border: #dbdbdb solid 2px;
+    border-radius: 3px;
+    margin-left: 6%;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+.eror{
+    position: absolute;
+    color: red;
+    bottom: -24px;
+    margin-left: 25px;
+}
+.button{
+    height: 40px;
+    margin-right: 35px;
+    cursor: pointer;
+    transition: ease 0.50s;
+    border: 0;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #1AAD81;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.button:hover{
+    transition: ease 0.50s;
+    transform: translate(-5px, -18%);
+    border: #1AAD81 solid 2px;
+    color: #1AAD81;
+    background: white;
+    box-shadow: 2px 2px 0px 2px #1AAD81;
+}
+.button:active{
+    transition: ease 0.05s;
+    background: #f1f1f1;
+}
+@media (max-width: 700px) {
+    .input {
+        margin-bottom: 25px;
+    }
+
+    .forma {
+        display: flex;
+        flex-direction: column;
+    }
+    .e-mail{
+        margin-left: 0;
+        width: 100%;
+    }
+    .eror{
+        margin-left: 0;
+    }
+    .button {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
