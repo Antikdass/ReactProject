@@ -1,21 +1,11 @@
-
 .main-block{
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.central-block{
-  width: 550px;
-  display: block;
-  text-align: center;
-}
-@media(max-width: 700px) {
-  .central-block {
-
-  }
-  .button{
-    margin-top: 10px;
+@media (max-width: 700px) {
+  .main-block{
+    height: auto;
   }
 }
